@@ -13,7 +13,7 @@ function App() {
   const [puntos, setPuntos] = useState([]);
 
   useEffect(() => {
-    axios.get('https://betting-backend-sigma.vercel.app//puntos')
+    axios.get('https://betting-backend-sigma.vercel.app/puntos')
       .then(response => {
         setPuntos(response.data);
       })
@@ -21,7 +21,7 @@ function App() {
         console.error('Error al obtener los partidos:', error);
       });
 
-    axios.get('https://betting-backend-sigma.vercel.app//equipos')
+    axios.get('https://betting-backend-sigma.vercel.app/equipos')
       .then(response => {
         setEquipos(response.data);
       })
@@ -29,7 +29,7 @@ function App() {
         console.error('Error al obtener los equipos:', error);
       });
 
-    axios.get('https://betting-backend-sigma.vercel.app//partidos')
+    axios.get('https://betting-backend-sigma.vercel.app/partidos')
       .then(response => {
         setPartidos(response.data);
       })
