@@ -1,0 +1,21 @@
+.versus-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .versus-image {
+    width: 50px; /* Adjust the size as needed */
+    height: 50;
+    margin: 0 10px;
+  }
+  
+  .versus-text {
+    font-size: 2em;
+    color: #ffee00;
+    font-weight: bold;
+    position: absolute;
+  }
+  
